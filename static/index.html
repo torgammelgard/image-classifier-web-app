@@ -1,18 +1,27 @@
 <html>
 <head>
+    <link rel="stylesheet" href="../css/index.css">
     <!-- Load the latest version of TensorFlow.js -->
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
     <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
 </head>
 <body>
-<div id="console"></div>
-<!-- Add an image that we will use to test -->
-<video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+<div class="container">
+    <h1>Image classifier</h1>
+    <h2>Using a KNN - K-Nearest Neighbour Classifier</h2>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+    <div id="webcam_buttons_wrapper">
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
 
-<button id="class-a">Add A</button>
-<button id="class-b">Add B</button>
-<button id="class-c">Add C</button>
+    <div class="buttons">
+        <button id="class-a">Add A</button>
+        <button id="class-b">Add B</button>
+        <button id="class-c">Add C</button>
+    </div>
+    </div>
+</div>
 
 <!-- Load index.js after the content of the page -->
 <script src="../js/index.js"></script>

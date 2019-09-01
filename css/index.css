@@ -1,0 +1,32 @@
+body {
+    background: rebeccapurple;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    min-width: 300px;
+    background: mediumpurple;
+}
+#webcam {
+    margin: 32px 0 32px 0;
+    padding: 16px;
+}
+#webcam_buttons_wrapper {
+    padding: 0;
+}
+.buttons {
+    margin-bottom: 32px;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button {
+    padding: 16px 16px;
+    background: black;
+    color: white;
+    border: none;
+}
